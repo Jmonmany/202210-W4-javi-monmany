@@ -1,3 +1,3 @@
 import { strictEquals } from './module.js';
 
-strictEquals();
+strictEquals(1,1);
