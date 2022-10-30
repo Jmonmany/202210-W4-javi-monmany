@@ -1,6 +1,6 @@
 import { strictEquals } from './module.js';
 
-strictEquals(-0, 0);
+strictEquals(false, false);
 
 
 
