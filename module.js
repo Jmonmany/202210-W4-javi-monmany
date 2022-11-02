@@ -1,14 +1,10 @@
 export function strictEquals(a, b) {
-    let result = Object.is(a, b);
+    const result = Object.is(a, b);
     if (Number.isNaN(a) & Number.isNaN(b)) {
-        result = false;
-        console.log('RESULT: ', result);
-        return;
+        return !result;
     }
     if (Object.is(-Infinity, 1 / a) || Object.is(-Infinity, 1 / b)) {
-        result = true;
-        console.log('RESULT: ', result);
-        return;
+        return !result;
     }
-    console.log('RESULT: ', result);
+    return result;
 }
