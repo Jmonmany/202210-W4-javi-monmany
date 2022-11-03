@@ -1,4 +1,4 @@
-export function strictEquals(a, b) {
+export default function strictEquals(a, b) {
     const result = Object.is(a, b);
     if (Number.isNaN(a) & Number.isNaN(b)) {
         return !result;
