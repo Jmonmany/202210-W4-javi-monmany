@@ -1,4 +1,4 @@
-import { strictEquals } from './module.js';
+import strictEquals from './module.js';
 
 console.table([
     { test: '1 & 1', result: strictEquals(1, 1) },
@@ -8,10 +8,8 @@ console.table([
     { test: '1 & "1"', result: strictEquals(1, '1') },
     { test: 'true & false', result: strictEquals(true, false) },
     { test: 'false & false', result: strictEquals(false, false) },
-    { test: '"Water" & "oil"', result: strictEquals("Water", "oil") },
+    { test: '"Water" & "oil"', result: strictEquals('Water', 'oil') },
 ]);
-
-
 
 /*  | A       | B     | RESULT |                   |
     | ------- | ----- | ------ | ----------------- |
@@ -23,4 +21,4 @@ console.table([
     | true    | false | false  |                   | false OKEY
     | false   | false | true   |                   | true OKEY
     | "Water" | "oil" | false  |                   | false OKEY
-*/    
+*/
