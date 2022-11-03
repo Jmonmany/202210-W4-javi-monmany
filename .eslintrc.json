@@ -12,7 +12,6 @@
     },
     "rules": {
         "import/extensions": "off",
-        "no-console": "off",
-        "no-bitwise": "off"
+        "no-console": "off"
     }
 }
