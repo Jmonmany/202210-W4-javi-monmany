@@ -4,6 +4,8 @@
 
 Write in a module of your own, a function called `strictEquals(a, b)` that returns the same value as `a === b`. Your implementation cannot use the `==` or `!==` operators.
 
+https://jmonmany.github.io/202210-W4-javi-monmany/
+
 | A       | B     | RESULT |                   |
 | ------- | ----- | ------ | ----------------- |
 | 1       | 1     | true   |                   |
